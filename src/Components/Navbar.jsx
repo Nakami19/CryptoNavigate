@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { HOME_URL, Login_URL, Register_URL } from '../../Constants/Url'
-import cryptoNavigate from '../../assets/cryptonavigate.png';
-import { useUserContext } from '../../Context/UserContext';
+import { HOME_URL, Login_URL, Register_URL } from '../Constants/Url'
+import cryptoNavigate from '../assets/cryptonavigate.png';
+import { useUserContext } from '../Context/UserContext';
 import {doc,onSnapshot} from 'firebase/firestore';
-import { db } from '../../Firebase/config';
-import { logout } from '../../Firebase/auth';
+import { db } from '../Firebase/config';
+import { logout } from '../Firebase/auth';
 
 
 function NavBar () {
@@ -32,7 +32,7 @@ function NavBar () {
       }, [user]);
 
     return (
-        <nav className='bg-white h-16'>
+        <nav className='bg-white h-16 md:h-20'>
             <ul className='flex justify-between items-center'>
                 <ol className=''>
                     <a href={HOME_URL}>
@@ -54,10 +54,10 @@ function NavBar () {
                     <button type='button' className="font-montserrat" onClick={handleLogout}>Cerrar sesión</button>
                 <div className='flex items-center gap-3'>
                     <h1 className='font-montserrat hidden md:flex'>{nombreusuario}</h1>
-                    <div className="avatar">
-                        <div className="w-16 h-14 rounded-full ">
+                    <div className="">
+                        <div className="md:w-16 w-12 h-14 rounded-full pt-1 md:pt-0">
                         {imagenFirebase ? (
-                        <img src={imagenFirebase} alt="Profile" />
+                        <img src={imagenFirebase} alt="Profile"/>
                         ) : (
                         <img src="" alt="Profile" />
                         )}

@@ -48,7 +48,7 @@ function Login() {
       };
 
     return(
-        <div className="min-h-screen  md:bg-[url('https://de.scalable.capital/images/kcbf79ije7q7/5ef6c9cjoexQ9B1z1HLDFY/aeb7421530c3dd1bc48dd3398bb4977c/Crypto_LP_Header_-_EN.png')] bg-no-repeat lg: bg-left lg:bg-contain bg-[#4E598C] md: bg-cover">
+        <div className="min-h-screen  md:bg-[url('https://de.scalable.capital/images/kcbf79ije7q7/5ef6c9cjoexQ9B1z1HLDFY/aeb7421530c3dd1bc48dd3398bb4977c/Crypto_LP_Header_-_EN.png')] bg-no-repeat lg: bg-left lg:bg-contain bg-cyan-900 md: bg-cover">
             <div className="flex flex-col items-center justify-center">
             <div className="bg-coin-yellow shadow relative  lg:rounded-none md: rounded-xl lg:px-28 md: px-10 md: pb-10 lg:min-h-screen lg:ms-auto md: h-5/6 lg:w-1/2 md: w-5/6  lg:mt-0 md: mt-24">
                 <div className="scale-90">
@@ -82,7 +82,6 @@ function Login() {
                             <div className="mt-8">
                                 <button role="button" className="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-black border rounded hover:bg-gray-700 py-4 w-full" onClick={onSubmit}>Iniciar sesión</button>
                             </div>
-                
 
                         </div>
 

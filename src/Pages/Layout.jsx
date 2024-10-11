@@ -1,6 +1,6 @@
 import React from "react"
 import { Outlet } from 'react-router-dom'
-import NavBar from "../Components/Navbar/Navbar"
+import NavBar from "../Components/Navbar"
 import { UserContextProvider } from "../Context/UserContext"
 
 function Layout() {
